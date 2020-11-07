@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'tag_helper'
 
 module AutoHtml
@@ -19,7 +21,8 @@ module AutoHtml
           height: @height,
           width: @width,
           frameborder: 0,
-          scrolling: 'no') { '' }
+          scrolling: 'no'
+        ) { '' }
       end
     end
 

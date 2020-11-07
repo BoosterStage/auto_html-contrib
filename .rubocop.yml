@@ -6,3 +6,12 @@ Metrics/LineLength:
 
 Style/FileName:
   Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Gemspec/RequiredRubyVersion:
+  Enabled: false
+
+AllCops:
+  NewCops: disable

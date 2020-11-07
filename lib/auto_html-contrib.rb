@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Filters for AutoHtml
 module AutoHtml
   autoload :Gist,             'auto_html/gist'

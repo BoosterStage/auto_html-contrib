@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'tag_helper'
 
 module AutoHtml
@@ -36,7 +38,8 @@ module AutoHtml
         scrolling: 'no',
         marginheight: 0,
         marginwidth: 0,
-        src: path + '?' + params.join('&amp;')) { '' }
+        src: path + '?' + params.join('&amp;')
+      ) { '' }
     end
 
     def link_tag(path, map_query)
@@ -44,9 +47,10 @@ module AutoHtml
       tag(
         :a,
         href: path + '?' + params.join('&amp;'),
-        style: 'color:#000;text-align:left') do
-          'View Larger Map'
-        end
+        style: 'color:#000;text-align:left'
+      ) do
+        'View Larger Map'
+      end
     end
 
     def map_options
