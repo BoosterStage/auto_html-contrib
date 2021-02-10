@@ -25,8 +25,8 @@ module AutoHtml
 
     def youtube_pattern
       @youtube_pattern ||=
-        %r{
-          (https?://)?
+        %r{^
+          (https://)?
           (www.)?
           (
             youtube\.com/watch\?v=|
@@ -34,6 +34,7 @@ module AutoHtml
             youtube\.com/watch\?feature=player_embedded&v=
           )
           ([A-Za-z0-9_-]*)(\&\S+)?(\?\S+)?
+          $
         }x
     end
 
